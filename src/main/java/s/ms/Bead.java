@@ -1,21 +1,22 @@
 package s.ms;
 
+
 import java.util.UUID;
 
-public class Beans {
-    class Bean{
+
+class Bead{
         private String id;
         private String name;
         private String philosopher;
         private String quote;
         private String tag;
 
-        public Bean(String id, String name, String philosopher, String quote, String tag) {
+        public Bead(String id, String name, String philosopher, String quote, String tag) {
             this.id = UUID.randomUUID().toString();
             this.name = name;
         }
 
-        public Bean(String id, String name, String philosopher, String quote) {
+        public Bead(String id, String name, String philosopher, String quote) {
             this.id = id;
             this.name = name;
             this.philosopher = philosopher;
@@ -48,5 +49,5 @@ public class Beans {
         public String minToString(){
             return this.getPhilosopher() + "\n" + this.getQuote();
         }
-    }
 }
+
